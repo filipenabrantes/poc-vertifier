@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 
 @Injectable()
 export class OpenAIService {
-  private API_KEY = '';
+  private API_KEY = process.env.API_KEY;
 
   private readonly categories = [
     'clothing',
